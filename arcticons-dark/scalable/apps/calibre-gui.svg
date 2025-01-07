@@ -1,1 +1,10 @@
-calibre-ebook-edit.svg
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1" id="svg6" sodipodi:docname="calibre-ebook-gui.svg" inkscape:version="1.4 (e7c3feb100, 2024-10-09)">
+  <sodipodi:namedview id="namedview6" pagecolor="#fff" bordercolor="#fff" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="11.608336" inkscape:cx="30.409181" inkscape:cy="11.888008" inkscape:window-width="1707" inkscape:window-height="1041" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg6"/>
+  <defs id="defs1">
+    <style id="style1">.a{fill:none;stroke:#fff;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style>
+  </defs>
+  <path class="a" d="M8.4,6.5v35a2,2,0,0,0,2,2h2.33V4.5H10.4A2,2,0,0,0,8.4,6.5Z" id="path1"/>
+  <path class="a" d="m 39.6011,6.5 c 0,-1.1045695 -0.895431,-2 -2,-2 h -24.87 v 39 h 24.87 c 1.104569,0 2,-0.895431 2,-2 z" id="path2" sodipodi:nodetypes="ssccsss"/>
+  <path style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers" d="M 26.862944,5.1776649 V 15.898478 l 3.407595,-3.715736 3.407595,3.715736 V 5.1776649" id="path7" sodipodi:nodetypes="ccccc"/>
+</svg>

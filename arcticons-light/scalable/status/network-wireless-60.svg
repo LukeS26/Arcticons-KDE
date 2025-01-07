@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1" id="svg4" sodipodi:docname="network-wireless-60.svg" inkscape:version="1.4 (e7c3feb100, 2024-10-09)">
+  <sodipodi:namedview id="namedview4" pagecolor="#fff" bordercolor="#000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="11.608336" inkscape:cx="25.19741" inkscape:cy="19.382623" inkscape:window-width="1707" inkscape:window-height="1041" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="g1"/>
+  <defs id="defs1">
+    <style id="style1">.a{fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style>
+  </defs>
+  <g id="g1" transform="translate(0,-0.00210472)">
+    <path class="a" d="M 30.7652,28.6157 A 10.5155,10.5155 0 0 0 17.33,28.5793 v 0.0364" id="path1" style="fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:5.6"/>
+    <path class="a" d="m 24.0211,32.9211 a 4.2163,4.2163 0 1 0 4.2162,4.2163 v 0 a 4.2163,4.2163 0 0 0 -4.2162,-4.2163 z" id="path2" style="fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round"/>
+    <path class="a" d="m 37.1783,21.3261 a 20.6755,20.6755 0 0 0 -26.3145,0" id="path3" style="fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4,8;stroke-dashoffset:0"/>
+    <path class="a" d="m 43.5,13.6741 a 30.5677,30.5677 0 0 0 -39,0" id="path4" style="fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4,8;stroke-dashoffset:11"/>
+  </g>
+</svg>

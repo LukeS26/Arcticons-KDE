@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg2" version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+ <defs id="defs1">
+  <style id="style1">.a{fill:none;stroke:#fff;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style>
+ </defs>
+ <g id="g1" fill="#fff" stroke-linecap="round" stroke-linejoin="round">
+  <path id="path1" d="m20.664 3.5c-1.0927 0-2 0.90728-2 2v2h-3.4746c-1.645 0-3 1.355-3 3v31c0 1.645 1.355 3 3 3h17.611c1.645 0 3-1.355 3-3v-31c0-1.645-1.355-3-3-3h-3.4648v-2c0-1.0927-0.90728-2-2-2zm0 2h6.6719v3a1.0001 1.0001 0 0 0 1 1h4.4648c0.56413 0 1 0.43587 1 1v31c0 0.56413-0.43587 1-1 1h-17.611c-0.56413 0-1-0.43587-1-1v-31c0-0.56413 0.43587-1 1-1h4.4746a1.0001 1.0001 0 0 0 1-1z"/>
+  <path id="line2" d="m19.664 7.5a1 1 0 0 0-1 1 1 1 0 0 0 1 1h8.6719a1 1 0 0 0 1-1 1 1 0 0 0-1-1z"/>
+  <g id="rect2">
+   <path id="path2" d="m16 14.3h16v26.45h-16z"/>
+   <path id="path3" d="m16 13.301a1.0001 1.0001 0 0 0-1 1v26.449a1.0001 1.0001 0 0 0 1 1h16a1.0001 1.0001 0 0 0 1-1v-26.449a1.0001 1.0001 0 0 0-1-1zm1 2h14v24.449h-14z"/>
+  </g>
+ </g>
+</svg>

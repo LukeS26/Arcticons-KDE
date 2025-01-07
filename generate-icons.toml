@@ -7,7 +7,7 @@ archive=false
 src_color="#000"
 color="#fff"
 line_weight=2
-src_paths=["icons_linux", ".arcticons/icons/black"]
+src_paths=["./arcticons/white"]
 
 [arcticons-light]
 name="Arcticons Light"
@@ -18,4 +18,4 @@ archive=false
 src_color="#000"
 color="#000"
 line_weight=2
-src_paths=["icons_linux", ".arcticons/icons/black"]
+src_paths=["./arcticons/black"]

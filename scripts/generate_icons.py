@@ -24,8 +24,9 @@ import yaml
 
 LOGGER = getLogger()
 
-has_inkscape = bool(which("inkscape"))
+has_inkscape = bool(which("org.inkscape.Inkscape"))
 
+failed_symlinks = []
 
 class GeneratorEntry(TypedDict):
     """A config entry for generationg icons."""
@@ -51,8 +52,6 @@ def process_entry(
     scalable_root = destination / "scalable"
     symbolic_root = destination / "symbolic"
 
-    logging.info("%s: creating %s", entry, dests)
-
     if not any((not (scalable_root / (dest + ".svg")).exists()) for dest in dests):
         logging.info("%s: Skipping, all icons already exist.", entry)
         return
@@ -68,11 +67,19 @@ def process_entry(
         if (src_path / f"{entry}.svg").exists():
             src_file = src_path / f"{entry}.svg"
             break
+
     if src_file is None:
-        logging.error("%s: Skipping, icon not found", entry)
+        for src_dir in config["src_paths"]:
+            src_path = Path(src_dir)
+            if (src_path / f"{entry.replace('_', '-')}.svg").exists():
+                src_file = src_path / f"{entry.replace('_', '-')}.svg"
+                break
+
+    if src_file is None:
+        print(f"\033[91mERROR: {entry} not found!\033[0m")
         return
 
-    logging.info("%s: %s -> %s", entry, src_file, scalable_root / f"{dest}.svg")
+    print(f"\033[92m{entry}: {src_file} -> {scalable_root / dest}.svg\033[0m")
 
     svg_file = etree.parse(src_file)  # noqa: S320
     svg_root = svg_file.getroot()
@@ -84,7 +91,7 @@ def process_entry(
 
     style_tag = svg_file.getroot().find(".//{http://www.w3.org/2000/svg}style")
     if style_tag is None or style_tag.text is None:
-        logging.error("%s: file %s doesn't have a style tag!", entry, src_file)
+        print(f"\033[91mERROR: {entry} has no style tag!\033[0m")
         return
 
     if "stroke-width" in style_tag.text:
@@ -113,16 +120,6 @@ def process_entry(
             )
             (scalable_root / f"{dest_file}.svg").unlink(missing_ok=True)
 
-            logging.info(
-                "%s: symlink: %s -> %s",
-                entry,
-                scalable_root / f"{dest_file}.svg",
-                (scalable_root / f"{dest}.svg").relative_to(
-                    (scalable_root / f"{dest_file}.svg").parent,
-                    walk_up=True,
-                ),
-            )
-
             symlink(
                 (scalable_root / f"{dest}.svg").relative_to(
                     (scalable_root / f"{dest_file}.svg").parent,
@@ -136,19 +133,21 @@ def process_entry(
 
     (symbolic_root / dest).parent.mkdir(exist_ok=True, parents=True)
 
-    logging.info(
-        "%s: %s -> %s", entry, src_file, symbolic_root / f"{dest}-symbolic.svg"
-    )
-    _ = subprocess.run(  # noqa: S603
-        [  # noqa: S607
-            "inkscape",
-            "--actions=select-all;object-stroke-to-path",
-            f"--export-filename={symbolic_root / dest}-symbolic.svg",
-            "--export-overwrite",
-            scalable_root / f"{dest}.svg",
-        ],
-        check=False,
-    )
+    try:
+        _ = subprocess.run(  # noqa: S603
+            [  # noqa: S607
+                "org.inkscape.Inkscape",
+                "--actions=select-all;object-stroke-to-path",
+                f"--export-filename={symbolic_root / dest}-symbolic.svg",
+                "--export-overwrite",
+                scalable_root / f"{dest}.svg",
+            ],
+            check=True,
+        )
+    except subprocess.CalledProcessError as e:
+        print(f"\033[91m{e}\033[0m")
+        failed_symlinks.append(src_file)
+
     with (symbolic_root / f"{dest}-symbolic.svg").open("r+") as symbolic_file:
         svg_data = scour.scourString(symbolic_file.read())
         symbolic_file.seek(0)
@@ -166,16 +165,6 @@ def process_entry(
                 exist_ok=True,
             )
             (symbolic_root / f"{dest_file}-symbolic.svg").unlink(missing_ok=True)
-
-            logging.info(
-                "%s: symlink: %s -> %s",
-                entry,
-                symbolic_root / f"{dest_file}-symbolic.svg",
-                (symbolic_root / f"{dest}-symbolic.svg").relative_to(
-                    (symbolic_root / f"{dest_file}-symbolic.svg").parent,
-                    walk_up=True,
-                ),
-            )
 
             symlink(
                 (symbolic_root / f"{dest}-symbolic.svg").relative_to(
@@ -211,6 +200,7 @@ def main(config_file: Path) -> None:
     """Generate all icons."""
     if not has_inkscape:
         logging.warning("Inkscape was not detected, not creating symbolic icons.")
+        return
 
     config: dict[str, GeneratorEntry] = tomllib.loads(
         config_file.read_text(encoding="utf8")
@@ -254,6 +244,9 @@ def main(config_file: Path) -> None:
             with contextlib.suppress(FileExistsError):
                 symlink("scalable", Path(section) / folder, target_is_directory=True)
 
+    for failed_link in failed_symlinks:
+        print(failed_link)
+
 
 if __name__ == "__main__":
     parser = ArgumentParser()
@@ -261,7 +254,5 @@ if __name__ == "__main__":
         "-c", "--config-file", help="The config file to read.", type=Path
     )
     args = parser.parse_args()
-
-    LOGGER.setLevel(logging.INFO)
 
     main(args.config_file)

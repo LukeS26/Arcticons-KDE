@@ -1,1 +1,9 @@
-../../scalable/apps/calibre-gui.svg
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg6" version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+ <defs id="defs1">
+  <style id="style1">.a{fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style>
+ </defs>
+ <path id="path1" d="m10.4 3.5c-1.645 0-3 1.355-3 3v35c0 1.645 1.355 3 3 3h2.3301a1.0001 1.0001 0 0 0 1-1v-39a1.0001 1.0001 0 0 0-1-1zm0 2h1.3301v37h-1.3301c-0.56413 0-1-0.43587-1-1v-35c0-0.56413 0.43587-1 1-1z" stroke-linecap="round" stroke-linejoin="round"/>
+ <path id="path2" d="m12.73 3.5a1.0001 1.0001 0 0 0-1 1v39a1.0001 1.0001 0 0 0 1 1h24.871c1.645 0 3-1.355 3-3v-35c0-1.645-1.355-3-3-3zm1 2h23.871c0.56413 0 1 0.43587 1 1v35c0 0.56413-0.43587 1-1 1h-23.871z" stroke-linecap="round" stroke-linejoin="round"/>
+ <path id="path7" d="m26.863 4.1777a1 1 0 0 0-1 1v10.721a1.0001 1.0001 0 0 0 1.7363 0.67578l2.6699-2.9121 2.6719 2.9121a1.0001 1.0001 0 0 0 1.7363-0.67578v-10.721a1 1 0 0 0-1-1 1 1 0 0 0-1 1v8.1504l-1.6699-1.8203a1.0001 1.0001 0 0 0-1.4746 0l-1.6699 1.8203v-8.1504a1 1 0 0 0-1-1z" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+</svg>

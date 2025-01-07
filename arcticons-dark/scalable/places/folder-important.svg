@@ -1,2 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><style>.c{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}.d{fill:#fff;stroke-width:2px;}</style></defs><g id="a"><path class="c" d="m4.5,11.5c0-1.6569,1.3431-3,3-3h8.7181c.8337,0,1.6465.2605,2.325.7451l4.9138,3.5099c.6784.4846,1.4913.7451,2.325.7451h14.7181c1.6569,0,3,1.3431,3,3v20c0,1.6569-1.3431,3-3,3H7.5c-1.6569,0-3-1.3431-3-3V11.5Z"/></g><g id="b"><circle class="d" cx="24" cy="33.4762" r="1.5"/><line class="c" x1="24" y1="18.5" x2="24" y2="29.6386"/></g></svg>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1" id="svg1" sodipodi:docname="folder-important.svg" inkscape:version="1.4 (e7c3feb100, 2024-10-09)">
+  <sodipodi:namedview id="namedview1" pagecolor="#fff" bordercolor="#fff" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="16.6875" inkscape:cx="24" inkscape:cy="24" inkscape:window-width="1920" inkscape:window-height="1054" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg1"/>
+  <defs id="defs1">
+    <style id="style1">.c{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;}.d{fill:#fff;stroke-width:2px;}</style>
+  </defs>
+  <g id="a" transform="translate(0,-5e-5)" style="stroke-width:2;stroke-dasharray:none">
+    <path class="c" d="m 4.5,11.5 c 0,-1.6569 1.3431,-3 3,-3 h 8.7181 c 0.8337,0 1.6465,0.2605 2.325,0.7451 l 4.9138,3.5099 c 0.6784,0.4846 1.4913,0.7451 2.325,0.7451 H 40.5 c 1.6569,0 3,1.3431 3,3 v 20 c 0,1.6569 -1.3431,3 -3,3 h -33 c -1.6569,0 -3,-1.3431 -3,-3 z" id="path1" style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"/>
+  </g>
+  <g id="b" transform="translate(0,-5e-5)" style="stroke-width:2;stroke-dasharray:none">
+    <circle class="d" cx="24" cy="33.4762" r="1.5" id="circle1" style="fill:#fff;stroke-width:2;stroke-dasharray:none"/>
+    <line class="c" x1="24" y1="18.5" x2="24" y2="29.638599" id="line1" style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"/>
+  </g>
+</svg>

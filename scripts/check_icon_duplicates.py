@@ -21,6 +21,11 @@ def main(src_folder: Path, target_folder: Path, *, fix: bool = False) -> bool:
         logging.info("No duplicates found.")
         return True
 
+    for file in sorted(target_files - duplicates):
+        print(file)
+
+    return
+
     print("Following potential duplicate icons were found:")
     for file in sorted(duplicates):
         src_file = src_folder / file
