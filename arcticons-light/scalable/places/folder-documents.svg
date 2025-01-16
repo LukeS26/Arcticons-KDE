@@ -1,2 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="a" d="M39.5,15.5h-9a2,2,0,0,1-2-2v-9h-18a2,2,0,0,0-2,2v35a2,2,0,0,0,2,2h27a2,2,0,0,0,2-2Z"/><line class="a" x1="28.5" y1="4.5" x2="39.5" y2="15.5"/></svg>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1" id="svg1" sodipodi:docname="folder-documents.svg" inkscape:version="1.4 (e7c3feb100, 2024-10-09)">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="11.799844" inkscape:cx="32.203814" inkscape:cy="30.890238" inkscape:window-width="1920" inkscape:window-height="1054" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg1"/>
+  <defs id="defs1">
+    <style id="style1">.a{fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style>
+  </defs>
+  <path class="a" d="m 30.692472,22.769888 h -3.885951 a 0.86354483,0.87767326 0 0 1 -0.863545,-0.877672 v -3.94953 h -7.771905 a 0.86354483,0.87767326 0 0 0 -0.863544,0.877672 v 15.359283 a 0.86354483,0.87767326 0 0 0 0.863544,0.877672 h 11.657856 a 0.86354483,0.87767326 0 0 0 0.863545,-0.877672 z" id="path1"/>
+  <line class="a" x1="25.942974" y1="17.942686" x2="30.692471" y2="22.769886" id="line1"/>
+  <path class="c" d="m 4.5,11.49995 c 0,-1.6569 1.3431,-3 3,-3 h 8.7181 c 0.8337,0 1.6465,0.2605 2.325,0.7451 l 4.9138,3.5099 c 0.6784,0.4846 1.4913,0.7451 2.325,0.7451 H 40.5 c 1.6569,0 3,1.3431 3,3 v 20 c 0,1.6569 -1.3431,3 -3,3 h -33 c -1.6569,0 -3,-1.3431 -3,-3 z" id="path1-5" style="fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round"/>
+</svg>

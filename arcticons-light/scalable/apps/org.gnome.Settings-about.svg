@@ -1,2 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" id="a" viewBox="0 0 48 48"><defs><style>.b{fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style></defs><path class="b" d="m24,2.5c11.8741,0,21.5,9.6259,21.5,21.5s-9.6259,21.5-21.5,21.5S2.5,35.8741,2.5,24c.0055-11.8718,9.6282-21.4945,21.5-21.5Z"/><circle class="b" cx="24" cy="34.3564" r="2.1436"/><line class="b" x1="23.9774" y1="27.6398" x2="23.9774" y2="11.5"/></svg>
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" id="a" viewBox="0 0 48 48" version="1.1" sodipodi:docname="about.svg" inkscape:version="1.4 (e7c3feb100, 2024-10-09)">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="11.519948" inkscape:cx="19.444532" inkscape:cy="25.086919" inkscape:window-width="1707" inkscape:window-height="1041" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="a"/>
+  <defs id="defs1">
+    <style id="style1">.b{fill:none;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style>
+  </defs>
+  <path class="b" d="m24,2.5c11.8741,0,21.5,9.6259,21.5,21.5s-9.6259,21.5-21.5,21.5S2.5,35.8741,2.5,24c.0055-11.8718,9.6282-21.4945,21.5-21.5Z" id="path1"/>
+  <circle class="b" cx="24" cy="-13.6436" id="circle1" transform="scale(1,-1)" r="1"/>
+  <line class="b" x1="23.9774" y1="20.360201" x2="23.9774" y2="36.5" id="line1"/>
+</svg>

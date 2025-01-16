@@ -70,6 +70,11 @@ playlist:
 - mimetypes/video-x-matroska
 - mimetypes/video-vnd.rn-realvideo
 - mimetypes/video
+subtitle:
+- mimetypes/subtitle
+- mimetypes/application-x-subrip
+- mimetypes/application-x-srtrip
+- mimetypes/application-x-srt
 accessories-text-editor:
 - mimetypes/application-application-rtf
 - mimetypes/application-msword-template
@@ -135,8 +140,8 @@ libreoffice-base:
 text-vnd.wap.wmlscript:
 - mimetypes/text-vnd.wap.wmlscript
 - mimetypes/text-x-vbscript
-inode-mount-point:
-- mimetypes/inode-mount-point
+inode-mountpoint:
+- mimetypes/inode-mountpoint
 libreoffice-calc:
 - mimetypes/libreoffice-oasis-spreadsheet
 - mimetypes/libreoffice-spreadsheet-template
@@ -166,13 +171,12 @@ x-office-spreadsheet:
 - mimetypes/x-office-spreadsheet
 text-x-kotlin:
 - mimetypes/text-x-kotlin
-nemo:
+folder:
+- places/folder
 - mimetypes/inode-directory
-- mimetypes/inode-mountpoint
 - system/index
 - system/org.kde.dolphin
 - places/folder-stock
-- places/folder
 - places/folder-blue
 - places/folder-black
 - places/folder-grey
@@ -183,8 +187,15 @@ nemo:
 - places/folder-brown
 - places/folder-violet
 - apps/nemo
+- apps/dolphin
 - apps/org.kde.dolphin
 - apps/system-file-manager
+kicad:
+  - apps/kicad
+  - apps/org.kicad.kicad
+folder-network:
+- places/folder-network
+- places/folder-remote
 text-x-vue:
 - mimetypes/text-x-vue
 text-x-wxmathml:
@@ -202,6 +213,7 @@ text-x-makefile:
 unknown:
 - mimetypes/unknown
 - preferences/preferences-document
+folder-documents:
 - places/folder-documents
 text-x-systemd-unit:
 - mimetypes/text-x-systemd-unit
@@ -263,14 +275,19 @@ org.gnome.Settings-removable-media:
 - preferences/device-notifier
 - preferences/drive-removable-media
 - apps/org.gnome.Settings-removable-media
-org.gnome.Settings-mouse:
-- preferences/preferences-desktop-mouse
+input-mouse:
 - devices/input-mouse
+- preferences/preferences-desktop-mouse
 - apps/org.gnome.Settings-mouse
 notifications:
-- preferences/preferences-desktop-notification-bell
 - actions/notifications
+- preferences/preferences-desktop-notification-bell
+- preferences/preferences-desktop-notification
 - apps/org.gnome.Settings-notifications
+- actions/notification-inactive
+- actions/notification
+notification-active:
+- actions/notification-active
 preferences-desktop-activities:
 - preferences/preferences-desktop-activities
 preferences-desktop-navigation:
@@ -284,10 +301,12 @@ org.gnome.Epiphany:
 - categories/applications-internet
 - apps/org.gnome.Epiphany
 libreoffice-main:
+- apps/libreoffice-main
 - categories/applications-office
 - apps/libreoffice-startcenter
 - apps/org.libreoffice.LibreOffice.main
-- apps/libreoffice-main
+- mimetypes/libreoffice-master-document
+- mimetypes/libreoffice-oasis-master-document
 applications-system:
 - categories/applications-system
 applications-other:
@@ -314,6 +333,7 @@ ibus-engine:
 - apps/ibus-setup
 audio-headphones:
 - devices/audio-headphones
+- devices/audio-headset
 network-wireless:
 - devices/network-wireless
 blueman:
@@ -322,6 +342,15 @@ blueman:
 - apps/bluetooth
 - apps/blueman
 - status/blueman-tray
+network-bluetooth:
+- devices/network-bluetooth
+- devices/bluetooth
+network-bluetooth-activated:
+- devices/network-bluetooth-activated
+- preferences/preferences-system-bluetooth-activated
+network-bluetooth-inactive:
+- devices/network-bluetooth-inactive
+- preferences/preferences-system-bluetooth-inactive
 camera-photo:
 - devices/camera-photo
 battery:
@@ -382,6 +411,7 @@ folder-text:
 - places/folder-txt
 folder-download:
 - places/folder-download
+- places/folder-downloads
 folder-image:
 - places/folder-images
 - places/folder-pictures
@@ -733,6 +763,11 @@ steam_632360:
 - apps/steam_632360
 protonvpn-logo:
 - apps/protonvpn-logo
+mullvad-vpn:
+  - apps/mullvad
+  - apps/mullvad-vpn
+  - apps/mullvad-logo
+  - apps/mullvad-vpn-logo
 steam_icon_1677770:
 - apps/steam_icon_1677770
 inkscape:
@@ -758,6 +793,7 @@ vlc:
 - apps/vlc-xmas
 - apps/vlc
 - apps/vlc-kb
+- apps/org.videolan.VLC
 steam_icon_38:
 - apps/steam_icon_38
 - apps/steam_icon_70
@@ -840,6 +876,9 @@ steam_icon_1677740:
 - apps/steam_icon_1677740
 system-reboot:
 - apps/system-reboot
+update:
+- status/update
+- status/system-software-update
 godot:
 - apps/steam_icon_404790
 - apps/godot
@@ -935,6 +974,7 @@ steam_icon_1293830:
 - apps/steam_icon_1293830
 qbittorrent:
 - apps/qbittorrent
+- apps/org.qbittorrent.qBittorrent
 system-shutdown:
 - apps/system-shutdown
 monero-gui:
@@ -1005,6 +1045,7 @@ blender:
 - apps/blender-2.7
 calibre-gui:
 - apps/calibre-gui
+- apps/calibre
 steam_icon_835960:
 - apps/steam_icon_835960
 samrewritten:
@@ -1023,6 +1064,7 @@ steam_icon_1086940:
 - apps/steam_icon_1086940
 steam:
 - apps/steam
+- apps/com.valvesoftware.Steam
 filelight:
 - apps/filelight
 org.pipewire.Helvum:
@@ -1039,8 +1081,10 @@ microsft-edge-beta:
 - apps/microsft-edge-beta
 steam_icon_2185880:
 - apps/steam_icon_2185880
-org.gnome.Settings-about:
+about:
 - apps/org.gnome.Settings-about
+- preferences/help
+- actions/help-about
 fi.skyjake.Lagrange:
 - apps/fi.skyjake.clagrange
 - apps/fi.skyjake.Lagrange
@@ -1073,6 +1117,8 @@ steam_icon_1740930:
 libreoffice-math:
 - apps/org.libreoffice.LibreOffice.math
 - apps/libreoffice-math
+- mimetypes/libreoffice-formula
+- mimetypes/libreoffice-oasis-formula
 org.gnome.Calculator:
 - apps/org.gnome.Calculator
 btop:

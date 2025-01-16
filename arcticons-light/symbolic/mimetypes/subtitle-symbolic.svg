@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg1" version="1.1" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+ <defs id="defs1">
+  <style id="style1">.c{fill:none;stroke:#fff;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;}</style>
+ </defs>
+ <g id="a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+  <path id="path1" d="m10.5 3.5c-1.645 0-3 1.355-3 3v35c0 1.645 1.355 3 3 3h27c1.645 0 3-1.355 3-3v-26a1.0001 1.0001 0 0 0-1-1h-9c-0.56419 0-1-0.43581-1-1v-9a1.0001 1.0001 0 0 0-1-1zm0 2h17v8c0 1.645 1.355 3 3 3h8v25c0 0.56419-0.43581 1-1 1h-27c-0.56419 0-1-0.43581-1-1v-35c0-0.56419 0.43581-1 1-1z"/>
+  <path id="line1" d="m27.793 3.793a1 1 0 0 0 0 1.4141l11 11a1 1 0 0 0 1.4141 0 1 1 0 0 0 0-1.4141l-11-11a1 1 0 0 0-1.4141 0z"/>
+ </g>
+ <g id="b" transform="matrix(.76152 0 0 .7657 -.62859 -7.1706)" fill="none" stroke-width="2.6191">
+  <path id="polygon1" d="m16.701 20.693a1.3097 1.3097 0 0 0-0.65625 1.1328v15.348a1.3097 1.3097 0 0 0 1.9648 1.1328l13.289-7.6719a1.3097 1.3097 0 0 0 0-2.2695l-13.289-7.6719a1.3097 1.3097 0 0 0-1.3086 0zm1.9629 3.4004 9.3613 5.4062-9.3613 5.4062z" fill="#000" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <path id="path2" d="m11.873 25.068a1 1 0 0 0-1 1 1 1 0 0 0 1 1h20.254a1 1 0 0 0 1-1 1 1 0 0 0-1-1z" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+ <path id="path2-5" d="m15.873 29.113a1 1 0 0 0-1 1 1 1 0 0 0 1 1h20.254a1 1 0 0 0 1-1 1 1 0 0 0-1-1z" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+ <path id="path2-2" d="m11.873 33.158a1 1 0 0 0-1 1 1 1 0 0 0 1 1h20.254a1 1 0 0 0 1-1 1 1 0 0 0-1-1z" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+ <path id="path2-7" d="m13.873 37.203a1 1 0 0 0-1 1 1 1 0 0 0 1 1h20.254a1 1 0 0 0 1-1 1 1 0 0 0-1-1z" stroke-linecap="round" stroke-linejoin="round" style="paint-order:stroke fill markers"/>
+</svg>
